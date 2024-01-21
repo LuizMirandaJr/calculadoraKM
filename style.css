@@ -1,0 +1,139 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    
+    :root {
+        --main-color: #fff;
+        --icon-color: #222222;
+        --button-color: #F44336;
+        --hover: rgb(255, 0, 0);
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;    
+        
+    }
+
+    #img-bg {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.5;
+        height: auto;
+        width: 100vw;
+    }
+    
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+    }
+    
+    #calculadora {
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 36px;
+        border-radius: 20px;
+    }
+
+    #form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #title {
+        font-family: 'Concert One', sans-serif;
+        color: var(--main-color);
+        font-size: 46px;
+        text-align: center;
+    }
+    
+    .input-box label {
+        display: flex;
+        color: var(--main-color);
+        font-size: 18px;
+        font-weight: 400;
+        margin: 5px 0;
+        }
+
+    .input-field {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: var(--main-color);
+        padding: 0.3rem;
+        border-radius: 10px;
+        margin-top: 3px;
+    }
+
+    .input-field span {
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+    font-weight: 500;
+    }
+
+    .input-field img {
+        height: 40px;
+        padding: 8px 8px;
+    }
+
+    .input-field input {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        font-size: 20px;
+        color: var(--icon-color);
+        padding: 0 16px;
+        font-weight: 500;
+    }
+
+    button {
+        width: 100%;
+        background: var(--button-color);
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--main-color);
+        padding: 8px 26px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+
+    button:hover {
+        background: var(--hover);
+    }
+  
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        appearance: none;
+    }
+
+    .input-field input:focus {
+        outline: none;
+    }
+
+    #resultado h2{
+        font-family: 'Concert One', sans-serif;
+        color: var(--main-color);
+        text-align: center;
+    }
+
+    #result-l {
+        font-size: 30px;
+    }
+
+    #result-valor {
+        font-size: 36px;
+    }
