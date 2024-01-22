@@ -27,7 +27,7 @@
                         
                             <div class="input-field">
 
-                                <span>KM</span>
+                                <span id="auto-km">KM</span>
 
                                 <input type="number" id="distancia" required>                 
                                 <img src="./assets/place.svg" alt="">
@@ -39,7 +39,7 @@
                         
                             <div class="input-field">
                             
-                                <span>KM/L</span>
+                                <span id="km-litro">KM/L</span>
 
                                 <input type="number" id="consumo" required>
                                 <img src="./assets/pump.svg" alt="">
@@ -51,7 +51,7 @@
                         
                             <div class="input-field">
 
-                                <span>R$/L</span>
+                                <span id="preco-litro">R$/L</span>
                                 
                                 <input type="number" id="preco" step="0.01" required>
                                 <img src="./assets/money.svg" alt="">
@@ -59,16 +59,39 @@
                     </div>
                         <button id="calcular">CALCULAR</button>
         </form> 
-        <div id="resultado" class="hidden">
+        <div id="resultado" class="">
             <div id="resultl">
-                <h2 id="litros"></h2>
+                <h2 id="litros">Litros</h2>
             </div>
             <div id="result2">
-                <h2 id="reais"></h2>
+                <h2 id="reais">R$</h2>
             </div>
         </div>
-    </section>    
+    </section>  
+    
+    
 </main>
+
+<footer>
+
+    <div id="social-links">
+        <a href="https://github.com/LuizMirandaJr" target="_blank"> <ion-icon name="logo-github"></ion-icon></a>
+        <a href="https://www.instagram.com/nano_junior/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="www.linkedin.com/in/luizmirandajr" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+
+    </div>
+
+    <p>Desenvolvido por Luiz Miranda Jr. | <span>Front-End Developer</span> | Todos os direitos reservados &copy;</p>
+
+</footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="./script.js"></script>
+    
 </body>
+
+
+
 </html>

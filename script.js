@@ -11,8 +11,6 @@ form.addEventListener('submit', function(event) {
     const totalKm = (distancia / consumo).toFixed(2);
     const totalPreco = preco * (distancia / consumo);
 
-    document.getElementById('resultado').classList.remove('hidden');
-
     document.getElementById('litros').innerHTML = totalKm + "" + " Litros";
     document.getElementById('reais').innerHTML = "R$" + totalPreco.toFixed(2);
 });
