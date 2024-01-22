@@ -212,4 +212,10 @@
         #calculadora {
             margin-top: 0;
         }
+
+        footer {
+            font-size: 0.625rem;
+            width: 100vw;
+            padding: 1.25rem 3rem;
+        }
     }
