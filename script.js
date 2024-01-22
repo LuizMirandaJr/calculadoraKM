@@ -15,8 +15,4 @@ form.addEventListener('submit', function(event) {
 
     document.getElementById('litros').innerHTML = totalKm + "" + " Litros";
     document.getElementById('reais').innerHTML = "R$" + totalPreco.toFixed(2);
-
-    console.log(totalKm)
-    console.log(totalPreco)
-
 });
