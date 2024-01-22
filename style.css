@@ -16,23 +16,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100vh;    
-        
+        background-image: url(https://source.unsplash.com/1440x720/?roadtrip);
+        height: 100vh;
     }
 
-    #img-bg {
-        position: absolute;
-        z-index: -1;
-        opacity: 0.5;
-        height: auto;
-        width: 100vw;
-    }
     
     #container {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 24px;
+        gap: 80px;
     }
     
     #calculadora {
@@ -62,7 +55,7 @@
     .input-box label {
         display: flex;
         color: var(--main-color);
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 400;
         margin: 5px 0;
         }
@@ -72,14 +65,14 @@
         align-items: center;
         justify-content: space-between;
         background-color: var(--main-color);
-        padding: 0.3rem;
+        padding: 6px;
         border-radius: 10px;
         margin-top: 3px;
     }
 
     .input-field span {
-    font-size: 1.3rem;
-    padding: 0.6rem 1rem;
+    font-size: 21px;
+    padding: 2px 16px;
     font-weight: 500;
     }
 
@@ -125,15 +118,18 @@
     }
 
     #resultado h2{
-        font-family: 'Concert One', sans-serif;
         color: var(--main-color);
         text-align: center;
     }
 
-    #result-l {
-        font-size: 30px;
+    #litros {
+        font-size: 40px;
     }
 
-    #result-valor {
-        font-size: 36px;
+    #reais {
+        font-size: 50px;
+    }
+
+    .hidden {
+        display: none;
     }

@@ -11,7 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img id="img-bg" src="https://source.unsplash.com/1440x720/?roadtrip" alt="">
     <main id="container">
     
     <section id="img">
@@ -54,21 +53,22 @@
 
                                 <span>R$/L</span>
                                 
-                                <input type="number" id="preco" required>
+                                <input type="number" id="preco" step="0.01" required>
                                 <img src="./assets/money.svg" alt="">
                             </div>             
                     </div>
                         <button id="calcular">CALCULAR</button>
         </form> 
-        <div id="resultado">
-            <div id="result-l">
-                <h2>100 Litros</h2>
+        <div id="resultado" class="hidden">
+            <div id="resultl">
+                <h2 id="litros"></h2>
             </div>
-            <div id="result-valor">
-                <h2>R$ 500,00</h2>
+            <div id="result2">
+                <h2 id="reais"></h2>
             </div>
         </div>
     </section>    
 </main>
+    <script src="./script.js"></script>
 </body>
 </html>
